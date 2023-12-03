@@ -1,4 +1,4 @@
-name: Jira Add Comment
+name: Publish JunitResults in Issue
 description: Add a comment to an issue
 branding:
   icon: 'align-left'
