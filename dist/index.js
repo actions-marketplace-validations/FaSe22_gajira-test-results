@@ -20,7 +20,7 @@ module.exports = class {
 
   async execute () {
     const issueId = this.argv.issue || this.config.issue || null
-    const { comment } = this.argv
+    let { comment } = this.argv
 
     console.log(`Adding comment to ${issueId}: \n${comment}`)
 		comment = {
