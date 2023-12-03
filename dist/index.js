@@ -63,6 +63,12 @@ class Jira {
       { method: 'POST', body })
   }
 
+	async createChecklist (body) {
+		return this.fetch('createChecklist',
+			{ pathname: 'rest/api/2/issue/${issueID}'},
+			{ method: 'PUT', body})
+	}
+
   async getIssue (issueId, query = {}) {
     const { fields = [], expand = [] } = query
 
