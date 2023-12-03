@@ -17,6 +17,10 @@ module.exports = class {
     const { comment } = this.argv
 
     console.log(`Adding comment to ${issueId}: \n${comment}`)
+		comment = {
+    "fields": {
+      "customfield_10034": "--- Tested on\n* [x] Chrome\n* Safari\n* Firefox\n* Edge\n* [x] IE11\n--- Mobile\n* Android\n* iPhone"
+    }
     await this.Jira.addComment(issueId, { body: comment })
 
     return {}
