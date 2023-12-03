@@ -20,6 +20,15 @@ class Jira {
     })
   }
 
+	 async createChecklist (issueId, data) {
+    return this.fetch('createChecklist', {
+      pathname: `/rest/api/2/issue/${issueId}`,
+    }, {
+      method: 'PUT',
+      body: data,
+    })
+  }
+
   async createIssue (body) {
     return this.fetch('createIssue',
       { pathname: '/rest/api/2/issue' },
