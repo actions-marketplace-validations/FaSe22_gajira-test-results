@@ -1,5 +1,5 @@
 {
-  "name": "@atlassian/gajira-comment",
+  "name": "@fase22/gajira-checklist",
   "version": "3.0.1",
   "description": "Add a comment",
   "main": "index.js",
